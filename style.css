@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.opacity-input {
+  /* these are just to center the input element. Not necessery if you gonna place it to somewhere else */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* if you want input to be horizontal, delete transform property's rotate value */
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.opacity-input[type="range"] {
+  width: 6rem;
+  -webkit-appearance: none;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s;
+  opacity: 0.7;
+}
+.opacity-input[type="range"]:hover {
+  opacity: 0.9;
+}
+.opacity-input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #0de4ec;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.opacity-input[type="range"]::-moz-range-thumb {
+  background-color: #0de4ec;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+}
+
+/* DONE */
+
+ul {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  color: white;
+  width: 250px;
+}
+
+ul li {
+  margin-bottom: 50px;
+}
